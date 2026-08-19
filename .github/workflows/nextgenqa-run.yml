@@ -58,7 +58,7 @@ jobs:
       - name: Run Cypress
         if: ${{ inputs.framework == 'cypress' }}
         run: |
-          npx cypress run --spec tests/
+                    npx cypress run --config-file false --e2e --spec "tests/**/*.cy.{js,jsx,ts,tsx}"
         env:
           CYPRESS_baseUrl: ${{ inputs.staging_url }}
 
@@ -70,6 +70,8 @@ jobs:
           path: |
             **/screenshots/
             allure-results/
+                        cypress/screenshots/
+                        cypress/videos/
 
       - name: Notify NextGen QA backend
         if: always() && env.NEXTGENQA_WEBHOOK_URL != ''

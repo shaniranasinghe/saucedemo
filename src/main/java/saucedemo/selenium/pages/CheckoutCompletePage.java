@@ -18,12 +18,12 @@ public class CheckoutCompletePage {
 	private WebElement btnBackHome;
 
 	// Constructor
-	public CheckoutCompletePage(WebDriver driver  {
+	public CheckoutCompletePage(WebDriver driver) {
 			PageFactory.initElements(driver, this);
 	}
 
 	// Actions
-	public void clickBtnBackHome() {
+	public void clickBtnBackHome
 		this.btnBackHome.click();
 	}
 

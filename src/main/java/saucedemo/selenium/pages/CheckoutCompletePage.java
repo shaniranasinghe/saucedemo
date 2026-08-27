@@ -18,7 +18,7 @@ public class CheckoutCompletePage {
 	private WebElement btnBackHome;
 
 	// Constructor
-	public CheckoutCompletePage(WebDriver driver  {
+	public CheckoutCompletePage(WebDriver driver) {
 			PageFactory.initElements(driver, this);
 	}
 

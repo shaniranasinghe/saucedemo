@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CheckoutCompletePage {
 
     // Locators
-	@FindBy(xpath = "//span[contains(text(),'Checkout: Complete!')]")
+	@FindBy(xpath = "//span[contains(text(),'Checkout: Complete!')] "
 	@CacheLookup
 	private WebElement msgFinal;
 
@@ -23,7 +23,7 @@ public class CheckoutCompletePage {
 	}
 
 	// Actions
-	public void clickBtnBackHome
+	public void clickBtnBackHome() {
 		this.btnBackHome.click();
 	}
 
